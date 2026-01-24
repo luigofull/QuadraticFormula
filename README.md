@@ -17,6 +17,4 @@
 
 ## Sketch video:
 
-<video controls width="600">
-    <source src="movies/SketchMovie.mp4" type="video/mp4">
-</video>
+[![Video Title](https://img.youtube.com/vi/tDaVIt_7aoU/0.jpg)](https://www.youtube.com/watch?v=tDaVIt_7aoU)
