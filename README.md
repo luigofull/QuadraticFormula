@@ -13,3 +13,10 @@
 > 4. then go to `/project-dir/src/sketch` and stasrt the compitation
 >
 > `manim --quality=k "sketch.py"`
+
+
+## Sketch video:
+
+<video controls width="600">
+    <source src="movies/SketchMovie.mp4" type="video/mp4">
+</video>
