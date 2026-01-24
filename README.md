@@ -1,6 +1,6 @@
 # My Manim animation about quadratic formula.
 
-## How to compilate animation:
+## How to compilate 'sketch' animation:
 > 1. clone the repo
 > 2. in project, create python venv
 >
