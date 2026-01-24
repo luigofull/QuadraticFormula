@@ -1,5 +1,48 @@
 from manim import *
-from sketch.formulas import *
+from formulas import *
 
 
-pass
+class QuadraticFormula(Scene):
+    def construct(self):
+        self.play(Write(basicFormula), run_time=1.3)
+        
+        self.play(ReplacementTransform(basicFormula, formulaStep2), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep2, formulaStep3), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep3, formulaStep4), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep4, formulaStep5), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep5, formulaStep6), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep6, formulaStep7), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep7, formulaStep8), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep8, formulaStep9), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep9, formulaStep10), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep10, formulaStep11), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep11, formulaStep12), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep12, formulaStep13), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep13, formulaStep14), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep14, formulaStep15), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep15, formulaStep16), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep16, formulaStep17), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep17, formulaStep18), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep18, formulaStep19), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep19, formulaStep20), run_time=1.3)
+        self.wait(0.7)
+        self.play(ReplacementTransform(formulaStep20, formulaStep21), run_time=1.3)
+        self.wait()
