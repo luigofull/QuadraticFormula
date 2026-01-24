@@ -10,7 +10,6 @@
 >
 > `pip install manim`
 >
-> then go to /project-dir/src/sketch
-> and stasrt the compitation
+> 4. then go to `/project-dir/src/sketch` and stasrt the compitation
 >
 > `manim --quality=k "sketch.py"`
