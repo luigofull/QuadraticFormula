@@ -1,1 +1,1 @@
-#My Manim animation about quadratic formula.
+# My Manim animation about quadratic formula.
