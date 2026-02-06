@@ -1,6 +1,6 @@
 from manim import *
 from MF_Tools import *
-from exps import *
+from formula_steps import *
 
   
 def exp1to2(self):

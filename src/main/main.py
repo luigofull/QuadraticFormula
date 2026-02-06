@@ -3,13 +3,13 @@ from manim import *
 from MF_Tools import *
 
 # project imports
-import moves as mv
-import exps as ex
+import mover as mv
+import formula_steps as fm
 
 
 class Animation(Scene):
     def construct(self):
-        self.add(ex.exp1)
+        self.add(fm.exp1)
         self.wait()
         
         mv.exp1to2(self)
@@ -35,7 +35,7 @@ class Animation(Scene):
         mv.exp21to22(self)
         
         box = SurroundingRectangle(
-            ex.exp22, 
+            fm.exp22, 
             color=YELLOW, 
             buff=0.2  
         )
