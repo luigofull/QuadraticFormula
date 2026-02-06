@@ -1,6 +1,12 @@
 from manim import *
 
 
+# for start func
+exp0 = MathTex(
+    "ax^{2}+bx+c=0 \\implies x =\\frac{-b\\pm \\sqrt{b^{2}-4ac}}{2a}",
+).scale(1)
+
+# for animation
 exp1 = MathTex(
     "ax^{2}+bx+c=0"
 ).scale(1)

@@ -19,6 +19,7 @@ def exp1to2(self):
     
     
 def exp2to3(self):
+    exp3s = exp3[0].split()
     self.play(
         TransformByGlyphMap(
             exp2,
@@ -27,8 +28,16 @@ def exp2to3(self):
             # - c/a
             ([7,8,9,10], [8,9,10,11]),
             ([12], [])
-        ), 
-        run_time=1.5
+        ),
+        run_time=1.5 
+    )
+    
+    self.play(
+        exp3s[3].animate.set_color(YELLOW),
+        exp3s[4].animate.set_color(YELLOW),
+        exp3s[5].animate.set_color(YELLOW),
+        exp3s[6].animate.set_color(YELLOW),
+        run_time=0.5
     )
     self.wait(0.85)
     
@@ -70,6 +79,17 @@ def exp3to4(self):
     
     
 def exp4to5(self):
+    exp5s = exp5[0].split()
+    
+    exp5s[14].set_color(YELLOW) # +
+    
+    for i in range(15, 22): # first ()
+        exp5s[i].set_color(YELLOW)
+
+    for i in range(23, 30): # second ()
+        exp5s[i].set_color(YELLOW)
+
+
     self.play(
         TransformByGlyphMap(
             exp4,
@@ -81,6 +101,27 @@ def exp4to5(self):
             ([], [*ir(23,29)])
         ),
         run_time=1.5
+    )
+    
+    self.play(
+        exp5s[14].animate.set_color(WHITE), # +
+        
+        exp5s[15].animate.set_color(WHITE),
+        exp5s[16].animate.set_color(WHITE),
+        exp5s[17].animate.set_color(WHITE),
+        exp5s[18].animate.set_color(WHITE),
+        exp5s[19].animate.set_color(WHITE),
+        exp5s[20].animate.set_color(WHITE),
+        exp5s[21].animate.set_color(WHITE),
+        
+        exp5s[23].animate.set_color(WHITE),
+        exp5s[24].animate.set_color(WHITE),
+        exp5s[25].animate.set_color(WHITE),
+        exp5s[26].animate.set_color(WHITE),
+        exp5s[27].animate.set_color(WHITE),
+        exp5s[28].animate.set_color(WHITE),
+        exp5s[29].animate.set_color(WHITE),
+        run_time=0.5
     )
     self.wait(0.85)
     
@@ -110,8 +151,11 @@ def exp5to6(self):
     
     
 def exp6to7(self):
+    exp7s = exp7[0].split()
+    exp7s[30].set_color(YELLOW)
+    
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp6,
             exp7,
             
@@ -124,24 +168,37 @@ def exp6to7(self):
 
     
 def exp7to8(self):
+    exp8s = exp8[0].split()
+    for i in range(30, 35):
+        exp8s[i].set_color(YELLOW)
+    
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp7,
             exp8,
             
             # 1 to 4a/4a
-            ([30], (30,31)),
+            ([30], [30,31]),
             ([30], [33,34]),
             ([], [32])
         ),
         run_time=1.5
+    )
+    
+    self.play(
+        exp8s[30].animate.set_color(WHITE),
+        exp8s[31].animate.set_color(WHITE),
+        exp8s[32].animate.set_color(WHITE),
+        exp8s[33].animate.set_color(WHITE),
+        exp8s[34].animate.set_color(WHITE),
+        run_time=0.5
     )
     self.wait(0.85)
     
     
 def exp8to9(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp8,
             exp9,
             
@@ -160,7 +217,7 @@ def exp8to9(self):
     
 def exp9to10(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp9,
             exp10,
             
@@ -179,7 +236,7 @@ def exp9to10(self):
     
 def exp10to11(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp10,
             exp11,
             
@@ -204,7 +261,7 @@ def exp10to11(self):
     
 def exp11to12(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp11,
             exp12,
             
@@ -221,8 +278,32 @@ def exp11to12(self):
     
     
 def exp12to13(self):
+    exp12s = exp12[0].split()
+    
+    self.play(exp12s[3].animate.set_color(YELLOW))
+    self.wait(0.1)
+    
+    self.play(exp12s[9].animate.set_color(YELLOW))
+    self.wait(0.1)
+    
     self.play(
-    TransformByGlyphMap(
+        exp12s[13].animate.set_color(YELLOW),
+        exp12s[14].animate.set_color(YELLOW),
+        exp12s[15].animate.set_color(YELLOW),
+        exp12s[16].animate.set_color(YELLOW)
+    )
+    self.wait(0.1)
+    
+    self.play(
+        exp12s[19].animate.set_color(YELLOW),
+        exp12s[20].animate.set_color(YELLOW),
+        exp12s[21].animate.set_color(YELLOW),
+        exp12s[22].animate.set_color(YELLOW)
+    )
+    self.wait(0.1)
+    
+    self.play(
+        TransformByGlyphMap(
             exp12,
             exp13,
             
@@ -234,11 +315,11 @@ def exp12to13(self):
             
             ([2], []),
             ([23], []),
-            ([1], [0]),
+            ([3], [0]),
             ([9], [0]),
             
             ([*ir(13,16)], [*ir(10,13)]),
-            ([*ir(24,27)], [*ir(10,13)])
+            ([*ir(19,22)], [*ir(10,13)])
         ),
         run_time=1.5
     )
@@ -247,7 +328,7 @@ def exp12to13(self):
     
 def exp13to14(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp13,
             exp14,
             
@@ -261,8 +342,34 @@ def exp13to14(self):
     
     
 def exp14to15(self):
+    exp14s = exp14[0].split()
+    
     self.play(
-    TransformByGlyphMap(
+        exp14s[2].animate.set_color(YELLOW),
+        exp14s[3].animate.set_color(YELLOW),
+        exp14s[4].animate.set_color(YELLOW),
+        exp14s[5].animate.set_color(YELLOW),
+        exp14s[6].animate.set_color(YELLOW),
+        exp14s[7].animate.set_color(YELLOW),
+        exp14s[8].animate.set_color(YELLOW),
+        exp14s[9].animate.set_color(YELLOW)
+    )
+    self.wait(0.1)
+    
+    self.play(
+        exp14s[15].animate.set_color(YELLOW),
+        exp14s[16].animate.set_color(YELLOW),
+        exp14s[17].animate.set_color(YELLOW),
+        exp14s[18].animate.set_color(YELLOW),
+        exp14s[19].animate.set_color(YELLOW),
+        exp14s[20].animate.set_color(YELLOW),
+        exp14s[21].animate.set_color(YELLOW),
+        exp14s[22].animate.set_color(YELLOW)
+    )
+    self.wait(0.1)
+    
+    self.play(
+        TransformByGlyphMap(
             exp14,
             exp15,
             
@@ -285,7 +392,7 @@ def exp14to15(self):
     
 def exp15to16(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp15,
             exp16,
             
@@ -302,7 +409,7 @@ def exp15to16(self):
 
 def exp16to17(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp16,
             exp17,
             
@@ -319,7 +426,7 @@ def exp16to17(self):
 
 def exp17to18(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp17,
             exp18,
             
@@ -333,7 +440,7 @@ def exp17to18(self):
 
 def exp18to19(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp18,
             exp19,
             
@@ -348,7 +455,7 @@ def exp18to19(self):
     
 def exp19to20(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp19,
             exp20,
             
@@ -363,7 +470,7 @@ def exp19to20(self):
     
 def exp20to21(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp20,
             exp21,
             
@@ -378,7 +485,7 @@ def exp20to21(self):
 
 def exp21to22(self):
     self.play(
-    TransformByGlyphMap(
+        TransformByGlyphMap(
             exp21,
             exp22,
             
