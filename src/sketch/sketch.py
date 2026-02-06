@@ -4,6 +4,7 @@ from formulas import *
 class Preview(Scene):
     def construct(self):
         self.add(basicFormula)
+        
 class QuadraticFormula(Scene):
     def construct(self):
         self.play(Write(basicFormula), run_time=1.3)
