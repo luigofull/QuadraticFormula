@@ -39,4 +39,4 @@ def end(self):
 
     self.play(Create(box))
 
-    self.wait()
+    self.wait(3)
