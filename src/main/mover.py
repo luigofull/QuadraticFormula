@@ -2,7 +2,6 @@ from manim import *
 from MF_Tools import *
 from formula_steps import *
 
-  
 def exp1to2(self):
     self.play(
         TransformByGlyphMap(
@@ -10,7 +9,8 @@ def exp1to2(self):
             exp2,
             
             # devide by a
-            ([0],[5,10]),
+            ([0],[5], {"path_arc":PI/4}),
+            ([0],[10], {"path_arc":PI/4}),
             ([],[4,9])
         ), 
         run_time=1.5
@@ -133,8 +133,8 @@ def exp5to6(self):
             exp6,
             
             # ()^2
-            ([29], [24], {"path_arc":PI}),
-            ([29], [28], {"path_arc":PI}),
+            ([29], [24], {"path_arc":PI/5}),
+            ([29], [28], {"path_arc":PI/5}),
             
             # 2^2
             ([26], [26]),

@@ -9,6 +9,8 @@ import mover as mv
 
 class Animation(Scene):
     def construct(self):
+        self.camera.background_color = "#111111"
+        
         se.start(self)
         
         mv.exp1to2(self)
